@@ -52,7 +52,7 @@ nav {
     margin: 10px;
     padding: 20px;
     box-shadow: 0 0 10px #ccc;
-    width: calc(33.333% - 20px); /* Makes three items per row */
+    width: calc(25% - 20px);
 }
 
 .product img {
