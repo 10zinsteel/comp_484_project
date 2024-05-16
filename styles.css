@@ -29,7 +29,7 @@ nav {
 
 .filter-btn {
     padding: 10px 20px;
-    margin: 0 5px; /* Reduced margin for better fit */
+    margin: 0 5px;
     background: #007BFF;
     color: white;
     border: none;
@@ -55,7 +55,7 @@ nav {
 }
 
 .product {
-    box-sizing: border-box; /* Include padding and border in the width */
+    box-sizing: border-box;
     background: white;
     margin: 10px;
     padding: 20px;
@@ -64,8 +64,9 @@ nav {
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Full width of the card, adjust if needed */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Limiting the height of the image */
 }
 
 .product p {
@@ -78,3 +79,4 @@ footer {
     text-align: center;
     padding: 10px 20px;
 }
+
