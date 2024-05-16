@@ -3,6 +3,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
 
 body {
@@ -29,7 +30,7 @@ nav {
 
 .filter-btn {
     padding: 10px 20px;
-    margin: 0 5px;
+    margin: 0 5px; /* Adjusted margins for buttons to minimize horizontal space usage */
     background: #007BFF;
     color: white;
     border: none;
@@ -57,20 +58,23 @@ nav {
 .product {
     box-sizing: border-box;
     background: white;
-    margin: 10px;
-    padding: 20px;
+    margin: 10px 5px; /* Reduced margin for better spacing */
+    padding: 10px; /* Reduced padding to minimize internal white space */
     box-shadow: 0 0 10px #ccc;
-    width: calc(25% - 20px); /* Adjust for four items per row */
+    width: calc(25% - 10px); /* Adjusted width for four columns with reduced spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures elements inside are spaced evenly */
 }
 
 .product img {
-    width: 100%; /* Full width of the card, adjust if needed */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 150px; /* Limiting the height of the image */
+    width: 100%;
+    height: auto;
+    max-height: 120px; /* Reduced max-height to better fit within cards */
 }
 
-.product p {
-    color: #555;
+.product h3, .product p {
+    margin: 5px 0; /* Reduced margin around text elements for tighter fitting */
 }
 
 footer {
@@ -78,5 +82,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 20px;
+    margin-top: 0; /* Ensuring no additional space above footer */
 }
+
 
