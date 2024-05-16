@@ -38,16 +38,19 @@ nav {
 }
 
 .product {
-    background: white;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px #ccc;
+    width: calc(33.333% - 20px); /* Adjusts the width of each product container */
+    display: inline-block;       /* Keeps products in a line */
+    vertical-align: top;         /* Aligns products at the top */
+    margin: 10px;                /* Adds space around each product */
+    box-sizing: border-box;      /* Includes padding and border in the element's total width and height */
+    padding: 10px;               /* Padding inside each product box */
+    border: 1px solid #ccc;      /* Optional: adds a border around each product */
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
-    max-height: 200px;
+    width: 100%;                 /* Makes the image fill the container */
+    height: auto;                /* Keeps the image aspect ratio intact */
+    display: block;              /* Removes extra space below the image */
 }
 
 .product p {
