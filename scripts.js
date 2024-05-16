@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     var productsContainer = document.getElementById('products');
+    var categoryDisplay = document.getElementById('categoryDisplay');
+    
     document.querySelectorAll('.filter-btn').forEach(function(button) {
         button.addEventListener('click', function() {
             var filter = this.getAttribute('data-price');
@@ -16,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (filter === '1000+') return product.price > 1000;
                 return true; // All products
             });
+            categoryDisplay.textContent = this.textContent; // Update the category display
             displayProducts(filteredProducts);
         });
     });
