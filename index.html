@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
     <title>Electric Bikes Store</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>Welcome to VoltPro ebikes</h1>
-      <nav>
-        <button class="filter-btn" data-price="all">All</button>
-        <button class="filter-btn" data-price="0-500">0 - $500</button>
-        <button class="filter-btn" data-price="500-1000">$500 - $1000</button>
-        <button class="filter-btn" data-price="1000+">$1000+</button>
-      </nav>
+        <img src="logo.png" alt="Logo" style="vertical-align: middle; height: 50px;">
+        <h1>Welcome to VoltPro ebikes</h1>
+        <nav>
+            <button class="filter-btn" data-price="all">All</button>
+            <button class="filter-btn" data-price="0-500">0 - $500</button>
+            <button class="filter-btn" data-price="500-1000">$500 - $1000</button>
+            <button class="filter-btn" data-price="1000+">$1000+</button>
+        </nav>
     </header>
+    <div id="categoryDisplay" style="text-align: center; font-size: 24px; margin-top: 20px;">All Products</div>
     <section id="products">
-      <!-- Products will be dynamically loaded here -->
+        <!-- Products will be dynamically loaded here -->
     </section>
     <footer>
-      <p>© 2024 Electric Bikes Store</p>
+        <p>© 2024 Electric Bikes Store</p>
     </footer>
     <script src="scripts.js"></script>
-  </body>
+</body>
 </html>
+
