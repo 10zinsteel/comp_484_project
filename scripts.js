@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
         { id: 1, name: "Bike Model 1", image: "bike1.jpg", description: "High quality electric bike", price: 450 },
         { id: 2, name: "Bike Model 2", image: "bike2.jpg", description: "Efficient and lightweight", price: 870 },
         { id: 3, name: "Bike Model 3", image: "bike3.jpg", description: "Luxury high performance", price: 950 },
-        { id: 4, name: "Bike Model 4", image: "bike4.jpg", description: "Heavy duty", price: 1200 }
+        { id: 4, name: "Bike Model 4", image: "bike4.jpg", description: "Heavy duty", price: 1200 },
+        { id: 5, name: "Bike Model 5", image: "bike5.jpg", description: "Urban explorer", price: 500 },
+        { id: 6, name: "Bike Model 6", image: "bike6.jpg", description: "Family friendly", price: 1300 }
     ];
 
     var productsContainer = document.getElementById('products');
